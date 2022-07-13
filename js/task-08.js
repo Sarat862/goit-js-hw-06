@@ -9,13 +9,13 @@ function onFormElSubmit(event) {
     const formPassword = event.currentTarget.elements.password.value;
 
     if (formEmail === '' || formPassword === '') {
-        alert("Please fill in all the fields!")
+        return alert("Please fill in all the fields!")
     };
-
+    
     const objectForm = {
         formEmail,
         formPassword,
     }
     console.log(objectForm);
-    event.currentTarget.reset();
+    event.currentTarget.reset();    
 }
